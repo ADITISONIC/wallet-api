@@ -8,7 +8,6 @@ dotenv.config()
 const PORT = process.env.PORT
 const app = express()
 if(process.env.NODE_ENV==="production")job.start()
-app.use(ratelimiter)
 app.use(express.json())
 async function initDB(){
     try {
